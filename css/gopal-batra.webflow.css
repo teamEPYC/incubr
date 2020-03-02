@@ -1,0 +1,661 @@
+.body {
+  height: 100vh;
+}
+
+.left {
+  width: 55%;
+  height: 100vh;
+  background-image: url('../images/bg.jpeg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left.left-food {
+  background-image: url('../images/food.jpeg');
+}
+
+.left.left-wedding {
+  background-image: url('../images/wedding.jpeg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.left.left-vr {
+  background-image: url('../images/vr.jpeg');
+}
+
+.left.left-vibrant-app {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, #414141, #000);
+}
+
+.left.left-podcast {
+  background-image: url('../images/podcast.jpg');
+  background-position: 50% 50%;
+}
+
+.left.left-announcement1 {
+  background-image: url('../images/waves.jpeg');
+  background-position: 50% 50%;
+}
+
+.right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.top {
+  margin-bottom: 20px;
+}
+
+.middle {
+  padding-right: 6em;
+  padding-left: 6em;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.heading {
+  margin-bottom: 32px;
+  font-family: Montserrat, sans-serif;
+  color: rgba(51, 51, 51, 0.64);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading.food-heading {
+  font-family: Karla, sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.heading.heading-wedding {
+  font-family: 'Great Vibes', cursive;
+  font-size: 58px;
+  line-height: 68px;
+  text-transform: none;
+}
+
+.heading.heading-vr {
+  font-family: 'Space Mono', sans-serif;
+  color: #111;
+}
+
+.heading.heading-app2 {
+  font-family: Poppins, sans-serif;
+  color: #111;
+  font-weight: 400;
+}
+
+.heading.heading-announcement {
+  font-family: 'Open Sans', sans-serif;
+  color: #111;
+  font-weight: 300;
+}
+
+.paragraph {
+  margin-bottom: 40px;
+  font-family: Cardo;
+  color: #818181;
+  line-height: 29px;
+  text-align: center;
+}
+
+.paragraph.p-food {
+  font-family: Karla, sans-serif;
+}
+
+.paragraph.p-wedding {
+  font-family: Montserrat, sans-serif;
+  color: #aaa;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.paragraph.pvr {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.paragraph.p-app2 {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.paragraph.p-announcement {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-field {
+  height: 64px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4;
+  background-color: #fff;
+  font-family: Cardo;
+  font-size: 18px;
+}
+
+.text-field:active {
+  border-color: #333;
+}
+
+.text-field:focus {
+  border-color: #333;
+}
+
+.text-field.input-food {
+  font-family: Karla, sans-serif;
+}
+
+.text-field.input-wedding {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+}
+
+.text-field.input-vr {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.text-field.input-app2 {
+  font-family: Poppins, sans-serif;
+}
+
+.text-field.input-announcement {
+  font-family: 'Open Sans', sans-serif;
+  color: #111;
+}
+
+.submit-button {
+  position: absolute;
+  left: auto;
+  top: 8%;
+  right: 1%;
+  bottom: 0%;
+  height: 54px;
+  padding-right: 24px;
+  padding-left: 24px;
+  background-color: #fff;
+  font-family: Montserrat, sans-serif;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.submit-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.submit-button.button-food {
+  font-family: Karla, sans-serif;
+  font-weight: 700;
+}
+
+.submit-button.button-wedding {
+  font-weight: 500;
+}
+
+.submit-button.button-vr {
+  font-family: 'Space Mono', sans-serif;
+  color: #111;
+}
+
+.submit-button.button-vr:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.submit-button.button-app2 {
+  font-family: Poppins, sans-serif;
+  color: #111;
+  font-weight: 700;
+}
+
+.submit-button.button-app2:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.submit-button.button-announcement {
+  font-family: 'Open Sans', sans-serif;
+  color: #111;
+  font-weight: 700;
+}
+
+.submit-button.button-announcement:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.form {
+  position: relative;
+}
+
+.list-item {
+  float: left;
+  text-align: center;
+}
+
+.list-item.follow-wedding {
+  font-weight: 300;
+}
+
+.list-item.follow-vr {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.list-item.follow-app2 {
+  font-family: Poppins, sans-serif;
+  color: #111;
+}
+
+.list {
+  margin-bottom: 0px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  font-family: Montserrat, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.folllow-text {
+  padding-right: 16px;
+  padding-left: 16px;
+  font-family: Montserrat, sans-serif;
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.folllow-text.follow-food {
+  font-family: Karla, sans-serif;
+}
+
+.folllow-text.follow-wedding {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+.folllow-text.follow-vr {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.folllow-text.follow-app2 {
+  font-family: Poppins, sans-serif;
+}
+
+.folllow-text.follow-announcement {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.follow-link {
+  padding-right: 16px;
+  padding-left: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.follow-link.follow-link-food {
+  font-family: Karla, sans-serif;
+  font-weight: 700;
+}
+
+.follow-link.follow-link-app2 {
+  color: #111;
+}
+
+.follow-link.follow-link-announcement {
+  font-family: 'Open Sans', sans-serif;
+  color: #111;
+}
+
+.lead-in {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.lead-left {
+  width: 33%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+.lead-right {
+  width: 33%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+.lead-center {
+  width: 33%;
+  text-align: center;
+}
+
+.lead-in-title {
+  font-family: Montserrat, sans-serif;
+  color: #b3b3b3;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.lead-in-title.lead-in-food {
+  font-family: Karla, sans-serif;
+  font-weight: 700;
+}
+
+.lead-in-title.lead-in-wedding {
+  font-weight: 400;
+}
+
+.lead-in-title.lead-in-vr {
+  font-family: 'Work Sans', sans-serif;
+  color: #b3b3b3;
+}
+
+.lead-in-title.lead-in-app2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+}
+
+.lead-in-title.lead-in-announcement {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.html-embed {
+  margin-bottom: 20px;
+}
+
+.background-video {
+  height: 100vh;
+}
+
+.preview {
+  display: -ms-grid;
+  display: grid;
+  padding: 100px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto auto;
+  grid-template-rows: auto auto auto;
+  background-color: #eee;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+.div-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.button-2 {
+  padding: 12px 28px;
+  border-radius: 4px;
+  background-color: #ff4952;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+html.w-mod-js *[data-ix="move-into-view"] {
+  opacity: 0;
+  -webkit-transform: translate(0px, 60px);
+  -ms-transform: translate(0px, 60px);
+  transform: translate(0px, 60px);
+}
+
+html.w-mod-js *[data-ix="move-into-view-delay-1"] {
+  opacity: 0;
+  -webkit-transform: translate(0px, 60px);
+  -ms-transform: translate(0px, 60px);
+  transform: translate(0px, 60px);
+}
+
+html.w-mod-js *[data-ix="move-into-view-delay-2"] {
+  opacity: 0;
+  -webkit-transform: translate(0px, 60px);
+  -ms-transform: translate(0px, 60px);
+  transform: translate(0px, 60px);
+}
+
+html.w-mod-js *[data-ix="reveal"] {
+  opacity: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .left {
+    width: 100%;
+    height: 40vh;
+  }
+  .right {
+    width: 100%;
+    height: 60vh;
+  }
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .middle {
+    padding-right: 6em;
+    padding-left: 6em;
+  }
+  .image {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .middle {
+    padding-right: 4em;
+    padding-left: 4em;
+  }
+  .image {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .left {
+    height: 200px;
+  }
+  .right {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .wrapper {
+    height: auto;
+  }
+  .middle {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .heading.heading-wedding {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .paragraph.p-wedding {
+    font-size: 14px;
+  }
+  .submit-button {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .list-item {
+    margin-bottom: 16px;
+  }
+  .list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .folllow-text {
+    margin-bottom: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .lead-left {
+    width: 25%;
+  }
+  .lead-right {
+    width: 25%;
+  }
+  .lead-center {
+    width: 50%;
+  }
+  .image {
+    width: 300px;
+  }
+}
+
+@font-face {
+  font-family: 'Greatvibes';
+  src: url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
