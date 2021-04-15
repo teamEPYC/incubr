@@ -47,11 +47,12 @@
         <script src=
     "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
         </script>
+    <link rel="stylesheet" href = "assets/css/bubble.css" />
         <style>
             .bs-example {
                 margin: 20px;
             }
-              
+
             .modal-content iframe {
                 margin: 0 auto;
                 display: block;
@@ -69,7 +70,7 @@
             });
         </script>
 </head>
-<body class="black-bg body-2" style="background: url(assets/images/lines.svg) no-repeat scroll center top;">
+<body onload="startBubbles()" class="black-bg body-2" style="background: url(assets/images/lines.svg) no-repeat scroll center top;" >
     <!--
     ===================
         NAVIGATION
@@ -81,26 +82,26 @@
             <div class="row">
                 <nav class="navbar navbar-expand-lg mh-nav nav-btn">
                     <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" class="img-fluid"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon icon">
                             <i class="fa fa-bars"></i>
                         </span>
-                    </button>                    
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-0 ml-auto">                       
+                        <ul class="navbar-nav mr-0 ml-auto">
                             <li class="nav-item">
                                 <a class="nav-link " href="#services">services</a>
                             </li>
-                            <li class="nav-item"> 
+                            <li class="nav-item">
                                 <a class="nav-link" href="#portfolio">portfolio</a>
-                            </li>  
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#client">clients</a>
-                            </li> 
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://api.whatsapp.com/send?phone=+919999988493&text=Hey,%20I%20have%20a%20request%20about%20Incubr">contact</a>
-                            </li>                           
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -109,18 +110,18 @@
     </header>
     <!--
     ==============
-        HOME 
+        HOME
     ==============
     -->
-    <section class="section relative ev-home resume-home" id="ev-home">                  
+    <section class="section relative ev-home resume-home" id="ev-home">
         <div class="bg-home-overlay" style="background: url(assets/images/bx-home.svg) no-repeat scroll center center">
             <div class="container zindex">
                 <div class="section-separator" style="color: #ff4952;">
                     <div class="row">
-                        <div class="col-md-10">  
+                        <div class="col-md-10">
                             <div class="resume-home-inner wow fadeInUp">
-                                <span class="span"></span> 
-                                <h2 class="btn-sss" style="font-size: 400%;" data-text="At incubr, we leverage the power of technology & creativity to enable businesses & brands"> At incubr, we leverage the power of <span style="color : #f5b962;"> technology & creativity </span>to enable businesses & brands. </h2> 
+                                <span class="span"></span>
+                                <h2 class="btn-sss" style="font-size: 400%;" data-text="At incubr, we leverage the power of technology & creativity to enable businesses & brands"> At incubr, we leverage the power of <span style="color : #f5b962;"> technology & creativity </span>to enable businesses & brands. </h2>
                                 <h4> </h4>
                             </div>
                         <div class="col-md-12">
@@ -159,23 +160,25 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                                
+                                    </div>
                                 </div>
                             </div>
-                        </div>                  
+                        </div>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
         <div class="shape-image">
             <img src="assets/images/green-bg.svg" alt="" class="img-fluid">
         </div>
-    </section> 
+    </section>
     <!--
     ================
-        WHAT We DO 
+        WHAT We DO
     ================
-    -->   
+    -->
+
+
     <section class="resume-do relative" id="services">
         <div class="container">
             <div class="row">
@@ -187,53 +190,6 @@
                         <p>
                            Founded by industry veterans and entrepreneurs with years of experience and lots of grey hairs. We work as a one destination for superb design and development. We combine decades of customer centric DNA with the state-of-the-art technology to enable the best, tailored to your needs with desired efficiency
                         </p>
-                        <div class="resume-title">
-                            <h1>services</h1>
-                        </div>
-                        <div class="row ">
-                            <div class="col-md-4">
-                                <div >
-                                    <div class="resume-do-icon " > 
-                                        <img src="assets/images/experience.svg" alt="" class="img-fluid">
-                                        <h5 class="">Branding & Strategy</h5>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-4">
-                                <div class="resume-do-icon">
-                                    <img src="assets/images/interface.svg" alt="" class="img-fluid">
-                                    <h5>User Experience Design</h5>
-                                </div>                                
-                            </div>
-                            <div class="col-md-4">
-                                <div class="resume-do-icon">
-                                    <img src="assets/images/strategy.svg" alt="" class="img-fluid">
-                                    <h5>Resource Creation</h5>
-                                </div>                                
-                            </div>
-                        </div> <br> <br>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="resume-do-icon">
-                                    <img src="assets/images/sprint.svg" alt="" class="img-fluid">
-                                    <h5>Sales Enablement </h5>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="resume-do-icon">
-                                    <img src="assets/images/nocode.svg" alt="" class="img-fluid">
-                                    <h5>No-Code Dev</h5>
-                                </div>                                
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="resume-do-icon">
-                                    <img src="assets/images/Startup Incubation.png" alt="" class="img-fluid">
-                                    <h5> Startup Incubation</h5>
-                                </div>                                
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -244,13 +200,98 @@
                     </div>
                 </div>
             </div>
+
+
+                        <br><br><br>
+                        <div class="resume-title">
+                            <h1>services</h1>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-4">
+                                <div >
+                                    <div class="resume-do-icon " >
+                                        <div class="d-flex justify-content-center">
+                                        <img src="assets/images/experience.svg" alt="" class="img-fluid">
+                                        </div>
+                                        <h5 class="text-center" ><a href="#Geeks2" data-toggle="modal" style="color: #ffffff">Branding & Strategy </a></h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="resume-do-icon">
+                                    <div class="d-flex justify-content-center">
+                                    <img src="assets/images/interface.svg" alt="" class="img-fluid">
+                                    </div>
+                                    <h5 class="text-center"><a href="#Geeks2" data-toggle="modal" style="color: #ffffff">User Experience Design</a></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="resume-do-icon">
+                                    <div class="d-flex justify-content-center">
+                                    <img src="assets/images/strategy.svg" alt="" class="img-fluid">
+                                    </div>
+                                    <h5 class="text-center"><a href="#Geeks2" data-toggle="modal" style="color: #ffffff">Resource Creation</a></h5>
+                                </div>
+                            </div>
+                            </div> <br> <br><br> <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="resume-do-icon">
+                                    <div class="d-flex justify-content-center">
+                                    <img src="assets/images/sprint.svg" alt="" class="img-fluid">
+                                    </div>
+                                    <h5 class="text-center"><a href="#Geeks2" data-toggle="modal" style="color: #ffffff">Sales Enablement </a></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="resume-do-icon">
+                                    <div class="d-flex justify-content-center">
+                                    <img src="assets/images/nocode.svg" alt="" class="img-fluid">
+                                    </div>
+                                    <h5 class="text-center"><a href="#Geeks2" data-toggle="modal" style="color: #ffffff">No-Code Dev</a></h5>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="resume-do-icon">
+                                    <div class="d-flex justify-content-center">
+                                    <img src="assets/images/Startup Incubation.png" alt="" class="img-fluid">
+                                    </div>
+                                    <h5 class="text-center"> <a href="#Geeks2" data-toggle="modal" style="color: #ffffff">Startup Incubation</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </section> 
+    </section>
+    <div id='score' >
+                                <div class="bubble-modal">
+                                    <div class="modal-content">
+                                       <!-- <div class="modal-header">
+                                         <h5 class="modal-title" id="bubbleModalTitle">
+                                            Title goes here
+                                          </h5>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                           <span aria-hidden="true">&times;</span>
+                                         </button>
+                                       </div> -->
+                                       <!-- <div class="modal-body">
+                                         lorem
+                                       </div> -->
+
+                                       </div>
+                                     </div>
+                                 </div>
+                            </div>
     <!--
     =====================
-        PORTFOLIO AREA 
+        PORTFOLIO AREA
     ====================
-    -->    
+    -->
     <section class="resume-portfolio relative" style="background: url(assets/images/orange-bg.svg) no-repeat scroll; background-position-x: 150%; background-position-y: 80%;" id="portfolio" >
         <div class="container">
             <div class="row">
@@ -258,7 +299,7 @@
                     <div class="resume-title wow fadeInUp">
                         <h5>Portfolio</h5>
                         <h1>case studies</h1>
-                    </div>                    
+                    </div>
                 </div>
                 <div class="col-md-11 mx-auto">
                     <div class="resume-portfolio-inner">
@@ -284,7 +325,7 @@
                                                         </svg>
                                                     </a>
                                                 </div>
-                                            </div>                                             
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -310,10 +351,10 @@
                                                         </svg>
                                                     </a>
                                                 </div>
-                                            </div>                                             
+                                            </div>
                                         </div>
-                                    </div>                                    
-                                </div>                                
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -342,9 +383,9 @@
                                                         </svg>
                                                     </a>
                                                 </div>
-                                            </div>                                             
+                                            </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-5 ml-auto">
@@ -368,10 +409,10 @@
                                                         </svg>
                                                     </a>
                                                 </div>
-                                            </div>                                             
+                                            </div>
                                         </div>
-                                    </div>                                    
-                                </div>                                
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -399,9 +440,9 @@
                                                             </svg>
                                                         </a>
                                                     </div>
-                                                </div>                                             
+                                                </div>
                                             </div>
-                                        </div>                                    
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-5 ml-auto">
@@ -425,22 +466,22 @@
                                                             </svg>
                                                         </a>
                                                     </div>
-                                                </div>                                             
+                                                </div>
                                             </div>
-                                        </div>                                    
-                                    </div>                                
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                </div>                
+                </div>
             </div>
         </div>
     </section>
     <!--
     ======================
-        RESUME FEEDBACK 
+        RESUME FEEDBACK
     ======================
-    --> 
+    -->
     <section class="resume-feedback relative" id="client">
         <div class="container">
             <div class="row">
@@ -448,8 +489,8 @@
                     <div class="resume-title pd_10 wow fadeInUp">
                         <h5>Clients</h5>
                         <h1>our clients</h1>
-                    </div>                    
-                </div>  
+                    </div>
+                </div>
                 <div class="col-md-12 pd_0">
                     <div class="advice_slider" id="advice_section_std">
                         <div class="card advice_c wow fadeInUp">
@@ -467,12 +508,12 @@
                                             <li><i class="fa fa-star"></i></li>
                                         </ul>
                                     </div>
-                                </div>                                
+                                </div>
                                 <p class="card-text"> Incubr is one of the most amazing team I've ever met. There power of understanding the product and the user needs is really amazing.</p>
                                 <h5>Bikash Dash</h5>
                                 <h6>CTO, LocoNav | Founder, Classplus</h6>
                             </div>
-                        </div> 
+                        </div>
                         <div class="card advice_c wow fadeInUp">
                             <div class="card-body">
                                 <div class="card_icon">
@@ -488,14 +529,14 @@
                                             <li><i class="fa fa-star"></i></li>
                                         </ul>
                                     </div>
-                                </div>                                
+                                </div>
                                 <p class="card-text">When you have a domain like marketing, you want to have the best design partners that are out there and this is when we ran into the team Incubr. We spent a lot of time understanding users and discovered  multiple pain points that were not catered to. Team People First, helped transform those pain points into features and we have received a lot of appreciation.</p>
                                 <h5>Salil Kalia</h5>
                                 <h6>CEO, TechCrumb & Performoo</h6>
                             </div>
-                        </div>                                                        
+                        </div>
                     </div>
-                </div>                          
+                </div>
             </div>
         </div>
         <div class="res-slider">
@@ -517,9 +558,9 @@
     </section>
     <!--
     ================
-        CONTACT US AREA SLIDER 
+        CONTACT US AREA SLIDER
     ================
-    -->    
+    -->
     <section class="resume-contact relative" id="contact">
         <div class="container">
             <div class="row">
@@ -527,21 +568,21 @@
                     <div class="contact-details wow fadeInUp">
                         <h2>Get in touch</h2>
                         <div class="contact-name">
-                            <h5>Email us</h5>   
-                           
-                            <p>gopal.batra@incubr.com</p>              
-                        </div>   
-                        <div class="contact-name">
-                           <h5>Visit us</h5>   
-                             
-                          <p>740, Phase 5, Udyog Vihar, 
-<br>Gurgaon 122016</p>           
+                            <h5>Email us</h5>
 
-                        </div>                                             
+                            <p>gopal.batra@incubr.com</p>
+                        </div>
+                        <div class="contact-name">
+                           <h5>Visit us</h5>
+
+                          <p>740, Phase 5, Udyog Vihar,
+<br>Gurgaon 122016</p>
+
+                        </div>
                     </div>
                 </div>
                 /*
-                
+
                 <div class="col-md-6 ml-auto ">
                         <div class="resume-form wow fadeInUp">
                             <div class="form-group">
@@ -549,10 +590,10 @@
                             </div>
                             <div class="form-group">
                             <input type="email" name="entry.1176216205"  placeholder="Email" class="form-control contact-name">
-                            </div>  
+                            </div>
                             <div class="form-group">
                             <textarea name="entry.1096076444" placeholder="Message"   rows="6" class="form-control contact-message"></textarea>
-                            </div>                                                
+                            </div>
                             <div class="resume-btn">
                                 <div class="btn-default">
                                     <a type="submit" href="#" class="cta">
@@ -563,14 +604,14 @@
                                         </svg>
                                  </a>
                                 </div>
-                            </div>                       
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-       
 
-    </section>    
+
+    </section>
 
     <!--Youtube Modal-->
     <div id="Geeks2" class="modal fade" s>
@@ -593,14 +634,14 @@
             </div>
         </div>
   </div>
-  
+
     <div class="footer-dark">
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Services</h3>
-                        <p><a href="#Geeks2" 
+                        <p><a href="#Geeks2"
                             data-toggle="modal">Branding & Strategy</a></p>
                         <p><a href="#services">User Experience Design</a></li>
                         <p><a href="#services">Resource Creation</a></p>
@@ -615,13 +656,13 @@
                         <p><a href="mailto:gopal.batra@incubr.com?
                             &subject=Application for job
                             &body=Hi Team Incubr I want to connect with you regarding the opening in ...">Careers</a></p>
-                    
 
-                   
+
+
                     </div>
                     <div class="col-md-6 item text">
                         <h3>Incubr</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>At Incubr, we are having fun, and help brands invent, experiment, massively grow with calculated risks, breaking rules and creating impact in their domains.</p>
                     </div>
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                 </div>
@@ -660,29 +701,29 @@
     <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
     <!-- Fancybox js-->
     <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
-    <!-- WoW min js--> 
+    <!-- WoW min js-->
     <script src="assets/plugins/js/wow.min.js"></script>
-    <!-- Gsap animation js-->    
+    <!-- Gsap animation js-->
     <script src="assets/plugins/js/TweenMax.min.js"></script>
     <!-- Parallax -->
     <script src="assets/plugins/js/aos.js"></script>
     <script src="assets/plugins/js/simpleParallax.min.js"></script>
-    <script src="assets/plugins/js/jquery.paroller.min.js"></script>    
-    <!-- Typing animation js-->    
-    <script src="assets/plugins/js/typed.js"></script> 
+    <script src="assets/plugins/js/jquery.paroller.min.js"></script>
+    <!-- Typing animation js-->
+    <script src="assets/plugins/js/typed.js"></script>
     <script src="assets/plugins/js/textition.js"></script>
     <!-- Custom Scripts-->
-    <script src="assets/js/custom-scripts.js"></script>   
-    <!-- Exttra inline js-->    
-    <script>      
+    <script src="assets/js/custom-scripts.js"></script>
+    <!-- Exttra inline js-->
+    <script>
         new WOW().init();
         $('#example').textition({
            autoplay: true,
            animation: 'ease-out',
           map: {x: 200, y: 100, z: 0},
-      }); 
+      });
     </script>
-    <!-- Page revealer with scroll custom js-->    
+    <!-- Page revealer with scroll custom js-->
     <script>
         var $animation_elements = $('.reveal-image');
         var $window = $(window);
@@ -694,13 +735,13 @@
             $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
-        
+
             $.each($animation_elements, function() {
             var $element = $(this);
             var element_height = $element.innerHeight();
             var element_top_position = $element.offset().top;
             var element_bottom_position = (element_top_position + element_height);
-        
+
             //check to see if this current container is within viewport
             if ((element_bottom_position >= window_top_position) &&
                 (element_top_position <= window_bottom_position)) {
@@ -711,11 +752,11 @@
             });
         }
             $window.on('scroll resize', check_if_in_view);
-            $window.trigger('scroll');        
-    </script>    
-
+            $window.trigger('scroll');
+    </script>
     <!--Footer-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/bubble.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
 </body>
