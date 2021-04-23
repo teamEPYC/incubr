@@ -93,9 +93,9 @@
             });
         </script>
 </head>
-<body class="black-bg body-2" style="background: url(assets/images/lines.svg) no-repeat scroll center top;" >
-
-
+<!--<body class="black-bg body-2" style="background: url(assets/images/lines.svg) no-repeat scroll center top;" >-->
+<body class="black-bg body-2" 
+style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1) 0%, rgba(0,0,102,1) 35%, rgba(0,204,255,1) 100%);" >
 <!--<div class="loader_frame">-->
 <!--        <div>-->
 <!--            <img class="load" src="assets/images/rocket.png" alt="loader"/>-->
@@ -112,8 +112,8 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <nav class="navbar navbar-expand-lg mh-nav nav-btn">
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt="" class="img-fluid"></a>
+                <nav class="navbar navbar-expand-lg mh-nav nav-btn pt-0 pb-0">
+                    <a class="navbar-brand pt-0 pb-0" href="index.html"><img src="assets/images/Logo.png" alt="" class="img-fluid"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon icon">
@@ -123,16 +123,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-0 ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link " href="#services">services</a>
+                                <a class="nav-link " href="#services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">portfolio</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#client">clients</a>
+                                <a class="nav-link" href="#client">Clients</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://api.whatsapp.com/send?phone=+919999988493&text=Hey,%20I%20have%20a%20request%20about%20Incubr">contact</a>
+                                <a class="nav-link" href="https://api.whatsapp.com/send?phone=+919999988493&text=Hey,%20I%20have%20a%20request%20about%20Incubr">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -146,41 +146,39 @@
     ==============
     -->
     <section class="section relative ev-home resume-home" id="ev-home">
-        <div class="bg-home-overlay" style="background: url(assets/images/bx-home.svg) no-repeat scroll center center">
+        <!--<div class="bg-home-overlay" style="background: url(assets/images/bx-home.svg) no-repeat scroll center center">-->
+        <div class="bg-home-overlay">
             <div class="container zindex">
                 <div class="section-separator" style="color: #ff4952;">
                     <div class="row">
-                        <div class="col-md-10">
-                            <div class="resume-home-inner wow fadeInUp">
+                        <div class="col-md-12">
+                            <div class="resume-home-inner wow fadeInUp position-relative">
                                 <span class="span"></span>
-                                <h2 class="btn-sss" style="font-size: 400%;" data-text="At incubr, we leverage the power of technology & creativity to enable businesses & brands"> At incubr, we leverage the power of <span style="color : #f5b962;"> technology & creativity </span>to enable businesses & brands. </h2>
+                                <h2 class="btn-sss" style="font-size: 400%;" 
+                                data-text="At incubr, we leverage the power of technology & creativity to enable businesses & brands">
+                                At incubr, we leverage the power of <span style="color : #f5b962;"> technology & creativity </span> to enable businesses & brands.
                                 <h4> </h4>
+                                <div class="position-absolute d-flex justify-content-end" style="left: 80%;top: 90%;">
+                                    <img src="assets/images/cube.png" height="100" alt="cube"/>                                
+                                </div>
                             </div>
                         <div class="col-md-12">
                             <div class="resume-main">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="main-inner relative">
-                                            <div class="img-cover">
-                                                <img src="assets/images/new-about.svg" alt="Incubr Team Members" class="img-fluid itwo">
-                                            </div>
-                                            <!--
-                                            <div class="bg-img">
-                                                <img src="assets/images/gopal2.png" alt="" class="img-fluid ione">
-                                            </div>-->
-                                            <div class="circle-bg">
-                                                <img src="assets/images/circle-dot-dot.svg" alt="" class="img-fluid ithree">
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="col-md-5 ml-auto">
                                         <div class="resume-details">
                                             <div class="resume-title wow fadeInUp">
-                                                <h1>who we are?</h1>
+                                                <h1>About us</h1>
                                                 <p>
-                                                    <b>Incubr</b> - a group of thinkers + doers leveraging the power of technology + creativity to help brands and businesses make a great impression & sell more.
-                                                    </p>
-                                                <div class="resume-btn">
+                                                    <!--<b>incubr</b> - A group of thinkers ,doers leveraging the power of technology , creativity to help brands and businesses make a great impression & sell more.
+                                                -->
+                                                We are a group of thinkers, doers leveraging
+                                                the power of technology,
+                                                creativity to help brands and businesses
+                                                make a great impression & sell more.
+                                                </p>
+                                                <div class="resume-btn d-flex justify-content-center">
                                                     <div class="btn-default">
                                                         <a href="https://api.whatsapp.com/send?phone=+919999988493&text=Hey,%20I%20have%20a%20request%20about%20Incubr" class="cta">
                                                             <span>Get in touch </span>
@@ -194,6 +192,22 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="col-md-6">
+                                        <div class="main-inner relative">
+                                            <div class="img-cover">
+                                                <img src="assets/images/3.png" alt="Incubr Team Members" class="img-fluid itwo">
+                                            </div>
+                                            <!--
+                                            <div class="bg-img">
+                                                <img src="assets/images/gopal2.png" alt="" class="img-fluid ione">
+                                            </div>-->
+                                            <div class="circle-bg">
+                                                <img src="assets/images/circle-dot-dot.svg" alt="" class="img-fluid ithree">
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -201,9 +215,9 @@
                 </div>
             </div>
         </div>
-        <div class="shape-image">
+        <!--<div class="shape-image">
             <img src="assets/images/green-bg.svg" alt="" class="img-fluid">
-        </div>
+        </div>-->
     </section>
     <!--
     ================
@@ -216,20 +230,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="resume-do-inner wow fadeInUp">
-                        <div class="resume-title">
-                            <h1>why us?</h1>
-                        </div>
-                        <p>
-                           Founded by industry veterans and entrepreneurs with years of experience and lots of grey hairs. We work as a one destination for superb design and development. We combine decades of customer centric DNA with the state-of-the-art technology to enable the best, tailored to your needs with desired efficiency
-                        </p>
+                    <div class="bg-title wow fadeInUp " id="example">
+                        <h1 style="font-size:100px">let's <br></h1>
+                        <h1 style="font-size:100px">grow<br></h1>
+                        <h1 style="font-size:100px">now<br></h1>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="bg-title wow fadeInUp " id="example">
-                        <h1>let's <br></h1>
-                        <h1>grow<br></h1>
-                        <h1>now<br></h1>
+                    <div class="resume-do-inner wow fadeInUp">
+                        <div class="resume-title" >
+                            <h1 >Why us?</h1>
+                        </div>
+                        <p>
+                           Founded by industry veterans and entrepreneurs with years of experience and lots of
+                            grey hairs. We work as a one destination for
+                            superb design and development. We combine decades of customer centric DNA with
+                            the state-of-the-art technology to enable
+                            the best, tailored to your needs with desired
+                            efficiency.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -237,7 +256,7 @@
 
                         <br><br><br>
                         <div class="resume-title">
-                            <h1>services</h1>
+                            <h1 class="text-center pl-0 mb-5">Services</h1>
                         </div>
                         <div class="row ">
                             <div class="col-md-4">
@@ -302,6 +321,9 @@
 <!--        </div>-->
     </section>
 
+
+
+
     <!--
     =====================
         PORTFOLIO AREA
@@ -312,8 +334,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="resume-title wow fadeInUp">
-                        <h5>Portfolio</h5>
-                        <h1>case studies</h1>
+                        <h1 class="text-center pl-0">Case studies</h1>
                     </div>
                 </div>
                 <div class="col-md-11 mx-auto">
@@ -325,7 +346,7 @@
                                     <h6>Design & No-code Dev (Webflow)</h6>
                                     <div class="image-one relative">
                                         <div class="reveal-image">
-                                            <img src="assets/images/p_xoxoday.png" alt="" class="img-fluid">
+                                            <img src="assets/images/6 (1).png" alt="" class="img-fluid">
                                         </div>
                                         <div class="resume-image-inner">
                                         </div>
@@ -351,7 +372,7 @@
                                     <h6>WebApp Design & Dev (Webflow)</h6>
                                     <div class="image-two relative">
                                         <div class="reveal-image">
-                                            <img src="assets/images/p_kite.png" alt="" class="img-fluid">
+                                            <img src="assets/images/3 (1).png" alt="" class="img-fluid">
                                         </div>
                                         <div class="resume-image-inner">
                                         </div>
@@ -383,7 +404,7 @@
                                     <h6>iOS, WebApp Design</h6>
                                     <div class="image-one relative">
                                         <div class="reveal-image">
-                                            <img src="assets/images/p_better.png" alt="" class="img-fluid">
+                                            <img src="assets/images/1 (1).png" alt="" class="img-fluid">
                                         </div>
                                         <div class="resume-image-inner">
                                         </div>
@@ -409,7 +430,7 @@
                                     <h6>WebApp Design, No-code Dev (Webflow, Bubble)</h6>
                                     <div class="image-one relative">
                                         <div class="reveal-image">
-                                            <img src="assets/images/p_techcrumb.png" alt="" class="img-fluid">
+                                            <img src="assets/images/5.png" alt="" class="img-fluid">
                                         </div>
                                         <div class="resume-image-inner">
                                         </div>
@@ -440,7 +461,7 @@
                                         <h6>Design, No-code Dev (Webflow)</h6>
                                         <div class="image-one relative">
                                             <div class="reveal-image">
-                                                <img src="assets/images/p_peoplewhodesign.png" alt="" class="img-fluid">
+                                                <img src="assets/images/4 (1).png" alt="" class="img-fluid">
                                             </div>
                                             <div class="resume-image-inner">
                                             </div>
@@ -466,7 +487,7 @@
                                         <h6>WebApp Design & Dev (React, React Native)</h6>
                                         <div class="image-one relative">
                                             <div class="reveal-image">
-                                                <img src="assets/images/p_cognition.png" alt="" class="img-fluid">
+                                                <img src="assets/images/2 (1).png" alt="" class="img-fluid">
                                             </div>
                                             <div class="resume-image-inner">
                                             </div>
@@ -502,8 +523,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="resume-title pd_10 wow fadeInUp">
-                        <h5>Clients</h5>
-                        <h1>our clients</h1>
+                        <h1 class="text-center pl-0">Our clients</h1>
                     </div>
                 </div>
                 <div class="col-md-12 pd_0">
@@ -676,7 +696,7 @@
 
                     </div>
                     <div class="col-md-6 item text">
-                        <h3>Incubr</h3>
+                        <h3>incubr</h3>
                         <p>At Incubr, we are having fun, and help brands invent, experiment, massively grow with calculated risks, breaking rules and creating impact in their domains.</p>
                     </div>
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
