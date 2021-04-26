@@ -83,6 +83,130 @@
             .bg_brown{
                 color:#b3543f !important
             }
+
+            .zoom {
+              padding: 50px;
+              transition: transform .6s; /* Animation */
+              margin: 0 auto;
+            }
+
+            .zoom:hover {
+              transform: scale(1.5,1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+
+
+            .arrows-container {
+              display: flex;
+              position: relative;
+            }
+
+            .arrow {
+              width: 3vw;
+              height: 3vw;
+              border: 1vw solid;
+              border-color: white transparent transparent white;
+              transform: rotate(135deg);
+            }
+            .arrow_bottom {
+              width: 3vw;
+              height: 3vw;
+              border: 1vw solid;
+              border-color: white transparent transparent white;
+              transform: rotate(-45deg);
+            }
+
+            .arrow-one {
+              animation: arrowMovement 1s  ease-in-out infinite;
+            }
+
+            .arrow-two {
+              animation: arrowMovement 2s ease-in-out infinite;
+            }
+
+            .arrow-three {
+              animation: arrowMovement 3s ease-in-out infinite;
+            }
+
+            @keyframes arrowMovement {
+              0% {
+                left: 0;
+                opacity: 0;
+              }
+              70% {
+                opacity: 1;
+              }
+              100% {
+                left: 30px;
+                opacity: 0;
+              }
+            }
+
+        .rocket{
+                /* background-color: purple; */
+                height: 500px;
+                width: 300px;
+            }
+            .rocket-body{
+                position: relative;
+                margin: 0px 43%;
+            }
+            .rocket-body img{
+                position: absolute;
+                z-index: 200;
+                width: 150px;
+            }
+            @keyframes flyUp{
+                0% {
+                    transform: translateY(50vh);
+                  }
+            }
+            @keyframes flyDown{
+                0% {
+                    transform: translateY(-30vh);
+                  }
+            }
+            .flying{
+                animation: flyUp 2s infinite ease;
+                animation-iteration-count: 1;
+            }
+            .flying-down{
+                animation: flyDown 2s infinite ease;
+                animation-iteration-count: 1;
+            }
+
+            .fade-in-image {
+              animation: fadeIn 5s;
+              -webkit-animation: fadeIn 5s;
+              -moz-animation: fadeIn 5s;
+              -o-animation: fadeIn 5s;
+              -ms-animation: fadeIn 5s;
+            }
+            @keyframes fadeIn {
+              0% {opacity:0;}
+              100% {opacity:1;}
+            }
+
+            @-moz-keyframes fadeIn {
+              0% {opacity:0;}
+              100% {opacity:1;}
+            }
+
+            @-webkit-keyframes fadeIn {
+              0% {opacity:0;}
+              100% {opacity:1;}
+            }
+
+            @-o-keyframes fadeIn {
+              0% {opacity:0;}
+              100% {opacity:1;}
+            }
+
+            @-ms-keyframes fadeIn {
+              0% {opacity:0;}
+              100% {opacity:1;}
+            }
+
+
         </style>
         <script>
             $(document).ready(function() {
@@ -116,7 +240,7 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg mh-nav nav-btn pt-0 pb-0">
-                    <a class="navbar-brand pt-0 pb-0" href="index.html"><img src="assets/images/Logo.png" alt="" class="img-fluid"></a>
+                    <a class="navbar-brand pt-0 pb-0" href="index.html" ><img src="assets/images/Logo.png" style="height: 100px" alt="" class="img-fluid"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon icon">
@@ -167,6 +291,16 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                                 <div class="position-absolute d-flex justify-content-end" style="left: 80%;top: 90%;">
                                     <img src="assets/images/cube.png" height="100" alt="cube"/>
                                 </div>
+                                        <div class="zindex" style="padding-top:100px ">
+                                            <div class="arrows-container">
+                                                  <div class="arrow arrow-one">
+                                                  </div>
+                                                  <div class="arrow arrow-two">
+                                                  </div>
+                                                  <div class="arrow arrow-three">
+                                                  </div>
+                                            </div>
+                                        </div>
                             </div>
                         <div class="col-md-12">
                             <div class="resume-main">
@@ -201,6 +335,8 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                                         </div>
                                     </div>
 
+
+
                                     <div class="col-md-6">
                                         <div class="main-inner relative">
                                             <div class="img-cover">
@@ -227,6 +363,14 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
             <img src="assets/images/green-bg.svg" alt="" class="img-fluid">
         </div>-->
     </section>
+
+        <!--
+    ================
+            ARROWS
+    ================
+    -->
+
+
     <!--
     ================
         WHAT We DO
@@ -266,7 +410,7 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                         <div class="row ">
                             <div class="col-md-4">
                                 <div >
-                                    <div class="resume-do-icon " >
+                                    <div class="resume-do-icon zoom">
                                         <div class="d-flex justify-content-center">
                                         <img src="assets/images/experience.svg" alt="" class="img-fluid">
                                         </div>
@@ -276,7 +420,7 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
 
                             </div>
                             <div class="col-md-4">
-                                <div class="resume-do-icon">
+                                <div class="resume-do-icon zoom">
                                     <div class="d-flex justify-content-center">
                                     <img src="assets/images/interface.svg" alt="" class="img-fluid">
                                     </div>
@@ -284,7 +428,7 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="resume-do-icon">
+                                <div class="resume-do-icon zoom">
                                     <div class="d-flex justify-content-center">
                                     <img src="assets/images/strategy.svg" alt="" class="img-fluid">
                                     </div>
@@ -292,9 +436,9 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                                 </div>
                             </div>
                             </div> <br> <br><br> <br>
-                        <div class="row">
+                        <div class="row" style="margin-top: -100px">
                             <div class="col-md-4">
-                                <div class="resume-do-icon">
+                                <div class="resume-do-icon zoom">
                                     <div class="d-flex justify-content-center">
                                     <img src="assets/images/sprint.svg" alt="" class="img-fluid">
                                     </div>
@@ -302,7 +446,7 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="resume-do-icon">
+                                <div class="resume-do-icon zoom">
                                     <div class="d-flex justify-content-center">
                                     <img src="assets/images/nocode.svg" alt="" class="img-fluid">
                                     </div>
@@ -311,7 +455,7 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                             </div>
 
                             <div class="col-md-4">
-                                <div class="resume-do-icon">
+                                <div class="resume-do-icon zoom">
                                     <div class="d-flex justify-content-center">
                                     <img src="assets/images/Startup Incubation.png" alt="" class="img-fluid">
                                     </div>
@@ -320,6 +464,13 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                             </div>
                         </div>
                     </div>
+                           <div class="row">
+                               <div class="rocket container">
+                                    <div class="rocket-body" data-aos="fade-in">
+                                        <img class="" src="assets/images/gopal1.png" alt="">
+                                    </div>
+                               </div>
+                           </div>
 <!--                </div>-->
 
 <!--            </div>-->
@@ -621,7 +772,6 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                         </div>
                     </div>
                 </div>
-                /*
 
                 <div class="col-md-6 ml-auto ">
                         <div class="resume-form wow fadeInUp">
@@ -647,7 +797,21 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                             </div>
                         </div>
                     </div>
+                       <div class="zindex" style="padding-top:100px; padding-left: 80% ">
+                        <div class="arrows-container">
+                              <div class="arrow_bottom arrow-one">
+                              </div>
+                              <div class="arrow_bottom arrow-two">
+                              </div>
+                              <div class="arrow_bottom arrow-three">
+                              </div>
+                        </div>
+                    </div>
                 </div>
+
+                </div>
+
+
             </div>
 
 
@@ -696,9 +860,6 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                         <p><a href="mailto:gopal.batra@incubr.com?
                             &subject=Application for job
                             &body=Hi Team Incubr I want to connect with you regarding the opening in ...">Careers</a></p>
-
-
-
                     </div>
                     <div class="col-md-6 item text">
                         <h3>incubr</h3>
@@ -709,7 +870,8 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
                 <p class="copyright">Copyright Incubr © 2020</p>
             </div>
         </footer>
-    </div>
+
+
 
 
     <!--
@@ -794,6 +956,31 @@ style="background: rgb(2,0,36);background: linear-gradient(112deg, rgba(2,0,36,1
             $window.on('scroll resize', check_if_in_view);
             $window.trigger('scroll');
     </script>
+        <script>
+        $window.on('scroll',function(){
+            if(scrollY>=1900){
+                $(".rocket-body img").addClass('flying');
+                $(".rocket-body img").removeClass('flying-down');
+                $(".rocket-body img").css({top:"0px"});
+            }
+            else{
+                $(".rocket-body img").addClass('flying-down');
+                $(".rocket-body img").removeClass('flying');
+                $(".rocket-body img").css({top:"200px"});
+            }
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        AOS.init({
+          duration:1200,
+          anchorPlacement: true,
+          mirror: false
+        });
+    </script>
+
+
     <!--Footer-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
