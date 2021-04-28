@@ -10,6 +10,8 @@
     <meta name="developer" content="Incubr"> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" /> 
     <!-- FAV AND ICONS   --> 
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link rel="shortcut icon" href="assets/images/apple-icon.png">
@@ -121,19 +123,7 @@
                 border-radius: 5px;
                 }
 
-            /*.arrow-one {
-              animation: arrowMovement 1s  ease-in-out infinite;
-            }
-
-            .arrow-two {
-              animation: arrowMovement 2s ease-in-out infinite;
-            }
-
-            .arrow-three {
-              animation: arrowMovement 3s ease-in-out infinite;
-            }
-*/
-            @keyframes arrowMovement {
+         @keyframes arrowMovement {
               0% {
                 left: 0;
                 opacity: 0;
@@ -146,42 +136,6 @@
                 opacity: 0;
               }
             }
-
-    .rocket{
-    height: 500px;
-    width: 100%;
-}
-.rocket-body{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.rocket-body img{
-    animation: fly 5s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
-    margin: 0 auto;
-    transform-origin: left;
-    position: absolute;
-    z-index: 200; 
-    width: 150px;
-    animation-fill-mode: forwards;
-    left: 500px;
-    top: 100px;
-}
-@keyframes fly {
-  0% {
-    transform: translate(-100px, -100px) rotate(10deg) scale(1);
-  }
-  50% {
-    transform: translate(100px, 50px) rotate(0deg) scale(1);
-  }
-  100% {
-    transform: translate(-50px, -50px) rotate(-10deg) scale(1);
-  }
-}
-.stars li{
-    transform: rotate(90deg)!important;
-}
-
             .fade-in-image {
               animation: fadeIn 5s;
               -webkit-animation: fadeIn 5s;
@@ -227,12 +181,25 @@
                 transform: scale(1.2);
                 transition: 1.2s;
                 color: whitesmoke;
+                font-size: 55px;
+                font-weight: 900;
+                font-family: 'Dosis-bold';
             }
             .navbar-brand:not(:hover){
                 transform: scale(1);
                 transition: 1.2s;
                 color: whitesmoke;
+                font-size: 55px;
+                font-weight: 900;
+                font-family: 'Dosis-bold';
             }
+            .stagger-it .char {
+                transition: color 1.2s linear!important;
+                transition-delay: calc( 0.04s * var(--char-index) )!important;
+}
+.stagger-it:hover {
+  color: #b3543f !important;
+}
 
         </style>
         <script>
@@ -266,7 +233,7 @@ style="background: rgb(2,0,36);" >
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <nav class="navbar navbar-expand-lg mh-nav nav-btn pt-0 pb-0" style="height: 95px;">
+                <nav class="navbar navbar-expand-lg mh-nav nav-btn pt-0 pb-0" style="height: 75px;">
                     <a class="navbar-brand pt-0 pb-0" href="index.html" data-text="incubr">incubr
                         <!-- <img src="assets/images/Logo.png" style="height: 100px" alt="" class="img-fluid"> -->
                     </a>
@@ -309,16 +276,24 @@ style="background: rgb(2,0,36);" >
                     <div class="row">
                         <div class="col-md-12">
                             <div class="resume-home-inner wow fadeInUp position-relative">
-                                <h2 class="btn-sss " style="font-size: 400%;"
-                                data-text="At incubr, we leverage the power of technology & creativity to enable businesses & brands">
+                                <h2 class="btn-sss text-glitch" style="font-size: 400%;"
+                                data-text="At incubr, We leverage the power of">
 
                                     At incubr, We leverage the power of
-                                    ultra-modern <span style="color : #b3543f;"> technology & creativity </span>
-                                    to enable business and brands to make
-                                    tangible impact.
+                                    <h2 class="btn-sss text-glitch2 d-inline" style="font-size: 400%;"
+                                        data-text="ultra-modern">
+                                    ultra-modern 
+                                    <h2 class="btn-sss d-inline text-glitch3" style="font-size: 400%;"
+                                        data-text="technology & creativity"><span class="text-glitch3" data-text="technology & creativity"style="color : #b3543f;"> technology & creativity </span>
+                                        <h2 class="btn-sss text-glitch4" style="font-size: 400%;"
+                                            data-text="to enable business and brands to make">
+                                        to enable business and brands to make
+                                        <h2 class="btn-sss text-glitch5" style="font-size: 400%;"
+                                           data-text="tangible impact.">
+                                        tangible impact.
                                 <h4> </h4>
-                                <div class="position-absolute d-flex justify-content-end" style="left: 80%">
-                                    <img src="assets/images/cube.png"  style="opacity: 28%;" alt="cube"/>
+                                <div class="position-absolute d-flex justify-content-end" style="left: 80%; opacity: 30%">
+                                    <img src="assets/images/cube.png" height="300" alt="cube"/>
                                 </div>
                                         <div class="zindex" style="padding-top:100px ">
                                             <div class="arrows-container">
@@ -410,17 +385,21 @@ style="background: rgb(2,0,36);" >
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="bg-title wow fadeInUp " id="example">
-                        <h1 style="font-size:165px">let's <br></h1>
-                        <h1 style="font-size:165px">grow<br></h1>
-                        <h1 style="font-size:165px" style="color: blue; padding-top: 100px; left: 30px; top: 50px;">fast<br></h1>
+                    <div class="bg-title wow fadeInUp stagger-it" id="example" style="transition: color 0.5s linear;
+                    transition-delay: calc( 0.04s * var(--char-index) ); padding-top: 115px;">
+                        <h1 style="font-size:171px; transition: color 0.5s linear;
+                        transition-delay: calc( 0.04s * var(--char-index) );" class="stagger-it" style="font-color: pink">let's <br></h1>
+                        <h1 style="font-size:171px;transition: color 0.5s linear;
+                        transition-delay: calc( 0.04s * var(--char-index) );" class="stagger-it">grow<br></h1>
+                        <h1 style="font-size:171px;transition: color 0.5s linear;
+                        transition-delay: calc( 0.04s * var(--char-index) );" class="stagger-it" style="color: blue; padding-top: 100px ">fast<br></h1>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="resume-do-inner wow fadeInUp">
                         <div class="resume-title" style="margin-left: -50px;">
-                            <h1 class="bg_brown" style="text-align: center">Why us?</h1>
+                            <h1 class="bg_brown" style="text-align: left;">Why us?</h1>
                         </div>
                         <p style="font-size: 23px; padding-top: 40px;opacity: 1;">
                            Founded by industry veterans and entrepreneurs and with years of astounding
@@ -493,10 +472,10 @@ style="background: rgb(2,0,36);" >
                             </div>
                         </div>
                     </div>
-                           <div class="row" style="margin-top: 130px; margin-bottom: 130px;">
-                               <div class="rocket container">
+                           <div class="row" style="margin-top: 120px;">
+                               <div class="rocket container" style="margin-top: 200px; margin-bottom: 200px">
                                     <div class="rocket-body">
-                                        <ul class="stars">
+                                        <ul class="stars" style="z-index: 99999">
                                             <li> </li>
                                             <li> </li>
                                             <li> </li>
@@ -890,11 +869,11 @@ style="background: rgb(2,0,36);" >
     <section class="resume-contact relative" id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-form-container container">
+                <div class="contact-form-container container col-lg-12 col-12">
                     <div class="contact-us">
                       <div class="contact-header">
                         <h1>
-                          &#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;CONTACT US
+                          &#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;CONTACT&nbsp;US
                         </h1>
                       </div>
                       <div class="social-bar">
@@ -922,6 +901,7 @@ style="background: rgb(2,0,36);" >
                         Contact us to start your next project! 
                       </h2>
                     </div>
+                    <div class=" d-flex">
                         <div class="address">
                         <i class="fas fa-map-marker-alt"></i>
                         <h3>
@@ -936,12 +916,13 @@ style="background: rgb(2,0,36);" >
                         <h3>
                             757 287 1608
                         </h3> -->
-                        <div class="email">
+                        <div class="email d-inline">
                         <i class="fas fa-envelope"></i>
                         <h3>
                             gopal.batra@incubr.com
                         </h3>
                         </div>
+                    </div>
                     <!-- </div> -->
                     <div class="contact-form mt-5">
                       <form>
@@ -1005,7 +986,7 @@ style="background: rgb(2,0,36);" >
                         <p style="font-size: 18px;"><a href="#services">User Experience Design</a></li>
                         <p style="font-size: 18px;"><a href="#services">Product Development</a></p>
                         <p style="font-size: 18px;"><a href="#services">Sales Enablement</a></p>
-                        <p style="font-size: 18px;"><a href="#services">User Experience Design</a></p>
+                        <p style="font-size: 18px;"><a href="#services">No-Code Dev</a></p>
                         <p style="font-size: 18px;"><a href="#services">Startup Incubation</a>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
@@ -1113,15 +1094,114 @@ style="background: rgb(2,0,36);" >
     </script>
         <script>
         $window.on('scroll',function(){
-            if(scrollY>=7700){
-                $(".navbar-brand").addClass('glitch');
+            if($(window).width()>1200){
+                if(scrollY>=2400){
+                $(".rocket-body img").addClass('flying');
+                $(".rocket-body img").removeClass('flying-down');
+                $(".rocket-body img").css({top:"-150px"});
             }
             else{
-                $(".navbar-brand").removeClass('glitch');
+                $(".rocket-body img").addClass('flying-down');
+                $(".rocket-body img").removeClass('flying');
+                $(".rocket-body img").css({top:"200px"});
+            }
+                if(scrollY>=7400){
+                    $(".navbar-brand").addClass('glitch');
+                    $(".contact-form-container").addClass('background-fade');
+                }
+                else{
+                    $(".navbar-brand").removeClass('glitch');
+                    $(".contact-form-container").removeClass('background-fade');
+                }
+            }
+            else if($(window).width()>1000){
+                if(scrollY>=2700){
+                $(".rocket-body img").addClass('flying');
+                $(".rocket-body img").removeClass('flying-down');
+                $(".rocket-body img").css({top:"-150px"});
+            }
+            else{
+                $(".rocket-body img").addClass('flying-down');
+                $(".rocket-body img").removeClass('flying');
+                $(".rocket-body img").css({top:"200px"});
+            }
+                if(scrollY>=7350){
+                    $(".navbar-brand").addClass('glitch');
+                    $(".contact-form-container").addClass('background-fade');
+                }
+                else{
+                    $(".navbar-brand").removeClass('glitch');
+                    $(".contact-form-container").removeClass('background-fade');
+                }
+            }
+            else if($(window).width()>800){
+                if(scrollY>=2850){
+                $(".rocket-body img").addClass('flying');
+                $(".rocket-body img").removeClass('flying-down');
+                $(".rocket-body img").css({top:"-150px"});
+            }
+            else{
+                $(".rocket-body img").addClass('flying-down');
+                $(".rocket-body img").removeClass('flying');
+                $(".rocket-body img").css({top:"200px"});
+            }
+                if(scrollY>=7100){
+                    $(".navbar-brand").addClass('glitch');
+                    $(".contact-form-container").addClass('background-fade');
+                }
+                else{
+                    $(".navbar-brand").removeClass('glitch');
+                    $(".contact-form-container").removeClass('background-fade');
+                }
+            }
+            else if($(window).width()>595){
+                if(scrollY>=3950){
+                $(".rocket-body img").addClass('flying');
+                $(".rocket-body img").removeClass('flying-down');
+                $(".rocket-body img").css({top:"-150px"});
+            }
+            else{
+                $(".rocket-body img").addClass('flying-down');
+                $(".rocket-body img").removeClass('flying');
+                $(".rocket-body img").css({top:"200px"});
+            }
+                if(scrollY>=11300){
+                    $(".navbar-brand").addClass('glitch');
+                    $(".contact-form-container").addClass('background-fade');
+                }
+                else{
+                    $(".navbar-brand").removeClass('glitch');
+                    $(".contact-form-container").removeClass('background-fade');
+                }
+            }
+            else{
+                if(scrollY>=3850){
+                $(".rocket-body img").addClass('flying');
+                $(".rocket-body img").removeClass('flying-down');
+                $(".rocket-body img").css({top:"-150px"});
+            }
+            else{
+                $(".rocket-body img").addClass('flying-down');
+                $(".rocket-body img").removeClass('flying');
+                $(".rocket-body img").css({top:"200px"});
+            }
+                if(scrollY>=11300){
+                    $(".navbar-brand").addClass('glitch');
+                    $(".contact-form-container").addClass('background-fade');
+                }
+                else{
+                    $(".navbar-brand").removeClass('glitch');
+                    $(".contact-form-container").removeClass('background-fade');
+                }
             }
         });
     </script>
-
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script>
+        console.clear();
+    
+    var s = Splitting();
+    </script>
 
     <script type="text/javascript">
         AOS.init({
