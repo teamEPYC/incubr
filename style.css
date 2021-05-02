@@ -265,7 +265,7 @@
   background: rgb(2,0,36);
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
-  animation: noise-anim 7s infinite linear alternate-reverse;
+  animation: noise-anim 2s infinite linear alternate-reverse;
 }
 .text-glitch4::before{
   content: attr(data-text);
