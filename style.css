@@ -133,7 +133,7 @@
   100% {
     clip: rect(50px, 9999px, 63px, 0);
   }
-/*}
+}
 .glitch:after {
   content: attr(data-text);
   position: absolute;
@@ -145,9 +145,9 @@
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim 2s 1 linear alternate-reverse;
-}*/
+}
 
-@keyframes noise-anim-2 {
+/*@keyframes noise-anim-2 {
   0% {
     clip: rect(68px, 9999px, 8px, 0);
   }
@@ -211,8 +211,9 @@
   100% {
     clip: rect(15px, 9999px, 3px, 0);
   }
-}
-.glitch:before {
+}*/
+
+/*.glitch:before {
   content: attr(data-text);
   position: absolute;
   left: -2px;
@@ -223,9 +224,9 @@
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s 1 linear alternate-reverse;
-}  
+}  */
 
-.text-glitch::before{
+/*.text-glitch::before{
   content: attr(data-text);
   position: absolute;
   left: -2px;
@@ -237,7 +238,8 @@
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
-.text-glitch::after{
+*/
+/*.text-glitch::after{
   content: attr(data-text);
   position: absolute;
   left: 2px;
@@ -344,7 +346,7 @@
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim 2s infinite linear alternate-reverse;
-}
+}*/
 /*Contact Form */
 .contact-form-container {
   background: #252039;
