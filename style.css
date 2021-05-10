@@ -4,7 +4,7 @@
   width: 300px;
 }
 .ss{
-  /*background: url(assets/images/clouds.png);*/
+  background: url(assets/images/clouds.png);
   /* background-position-y: -500px; */
 }
 .rocket-body{
@@ -345,7 +345,7 @@
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim 2s infinite linear alternate-reverse;
 }
-/* Pretty Stuff */
+/*Contact Form */
 .contact-form-container {
   background: #252039;
   color: whitesmoke;
@@ -601,7 +601,32 @@
         padding-right: 50px;
         padding-left: 350px;
       }
-}
+      .text-glitch3::before{
+        content: attr(data-text);
+        position: absolute;
+        left: -380px;
+        text-shadow: 1px 0 #b3543f;
+        top: 80px;
+        color: #b3543f;
+        background: rgb(2,0,36);
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim-2 3s infinite linear alternate-reverse;
+      }
+      .text-glitch3::after{
+        content: attr(data-text);
+        position: absolute;
+        left: 580px;
+        text-shadow: -1px 0 #b3543f;
+        top: 380px;
+        bottom: 30px;
+        color: #b3543f;
+        background: rgb(2,0,36);
+        overflow: hidden;
+        clip: rect(0, 900px, 0, 0);
+        animation: noise-anim 2s infinite linear alternate-reverse;
+      }
+    }
 @media(max-width:768px) {
   .email {
     margin-left: 10px;
@@ -635,7 +660,7 @@
     margin-bottom: 10px;
   }
   .contact-header h1{
-    font-size: 18px;
+    font-size: 20px;
     left: 0px;
     top: 0px;
   }
@@ -660,12 +685,223 @@
   .contact-form form{
     width: 360px;
   }
+  .contact-form form input,.contact-form form textarea{
+    font-size: 13px;
+  }
   .contact-form form button{
     left: 75px;
     width: 200px;
   }
+  .text-glitch3::before{
+    content: attr(data-text);
+    position: absolute;
+    left: -380px;
+    text-shadow: 1px 0 #b3543f;
+    top: 80px;
+    color: #b3543f;
+    background: rgb(2,0,36);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+  }
+  .text-glitch3::after{
+    content: attr(data-text);
+    position: absolute;
+    left: 580px;
+    text-shadow: -1px 0 #b3543f;
+    top: 380px;
+    bottom: 30px;
+    color: #b3543f;
+    background: rgb(2,0,36);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+  }
 }
+@media(max-width:510px) {
+  .email {
+    margin-left: 10px;
+    width: 150px;
+  }
+.address {
+    margin-left: 10%;
+    width: 180px;
+  } 
+  .email h1{
+    font-size: 8px;
+  } 
+  
+  .address h1{
+    font-size: 8px;
+  } 
+  .contact-us{
+    width: 100px;
+    left: -10px;
+    top: 20px;
+    overflow: hidden;
+    background-color: none;
+  }
+  .social-bar{
+    width: 50px;
+    left: 20px;
+  }
+  .social-bar ul li {
+    margin-bottom: 10px;
+  }
+  .contact-header h1{
+    font-size: 18px;
+    left: 0px;
+    top: 0px;
+  }
+  .contact-header{
+    left: -30px;
+    top: 150px;
+  }
+  .contact-form-container{
+    padding: 20px 10px;
+    padding-left: 20px;
+    width: 500px;
+  }
+  .contact-form-container .header{
+    margin-right: 10%;
+  }
+  .contact-form-container .header h1{
+    font-size: 30px;
+    margin-right: 15px;
+  }
+  .contact-form-container .header h2{
+    font-size: 16px;
+  }
+  .contact-form form{
+    width: 360px;
+  }
+  .contact-form form input,.contact-form form textarea{
+    font-size: 13px;
+  }
+  .contact-form form button{
+    left: 75px;
+    width: 200px;
+  }
 
+  .text-glitch3::before{
+    content: attr(data-text);
+    position: absolute;
+    left: -380px;
+    text-shadow: 1px 0 #b3543f;
+    top: 80px;
+    color: #b3543f;
+    background: rgb(2,0,36);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+  }
+  .text-glitch3::after{
+    content: attr(data-text);
+    position: absolute;
+    left: -380px;
+    text-shadow: -1px 0 #b3543f;
+    top: 380px;
+    bottom: 30px;
+    color: #b3543f;
+    background: rgb(2,0,36);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+  }
+}
+@media(max-width:450px) {
+  .email {
+    margin-left: 5px;
+    width: 150px;
+    margin-right: 2%;
+  }
+.address {
+    margin-left: 1%;
+    width: 150px;
+    margin-right: 5%;
+  } 
+  .email h3{
+    font-size: 10px;
+  } 
+  
+  .address h3{
+    font-size: 10px;
+  } 
+  .contact-us{
+    width: 80px;
+    left: -20px;
+    top: 20px;
+    overflow: hidden;
+    background-color: none;
+  }
+  .social-bar{
+    width: 30px;
+    left: 15px;
+  }
+  .social-bar ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .contact-header h1{
+    font-size: 12px;
+    left: 0px;
+    top: 0px;
+  }
+  .contact-header{
+    left: -30px;
+    top: 150px;
+  }
+  .contact-form-container{
+    padding: 20px 10px;
+    padding-left: 20px;
+    width: 500px;
+  }
+  .contact-form-container .header{
+    margin-right: 10%;
+  }
+  .contact-form-container .header h1{
+    font-size: 25px;
+  }
+  .contact-form-container .header h2{
+    font-size: 15px;
+    margin-left: 50px;
+  }
+  .contact-form{
+    padding-right: 20px;
+  }
+  .contact-form form{
+    width: 300px;
+  }
+  .contact-form form button{
+    left: 60px;
+    width: 180px;
+  }
+  .text-glitch3::before{
+    content: attr(data-text);
+    position: absolute;
+    left: -380px;
+    text-shadow: 1px 0 #b3543f;
+    top: 80px;
+    color: #b3543f;
+    background: rgb(2,0,36);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+  }
+  .text-glitch3::after{
+    content: attr(data-text);
+    position: absolute;
+    left: 580px;
+    text-shadow: -1px 0 #b3543f;
+    top: 380px;
+    bottom: 30px;
+    color: #b3543f;
+    background: rgb(2,0,36);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+  }
+}
 
 .modal {
   border-radius: 7px;
